@@ -5,74 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HopeTenars Group</title>
 
-  <!-- Google Font -->
+  <!-- Friendly font -->
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       font-family: "Baloo 2", cursive;
-      background: #fffaf0;
+      background: #fdfefe;
       color: #333;
     }
 
-    header {
-      background: linear-gradient(135deg, #ffb703, #ff6f91);
-      padding: 4rem 1rem 6rem;
-      text-align: center;
-      position: relative;
-      color: white;
+    /* Navigation */
+    nav {
+      background: #1d3557;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    header h1 {
-      font-size: 3.5rem;
+    nav h1 {
+      color: #f1faee;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    nav a {
+      color: #f1faee;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    /* Hero */
+    header {
+      background: linear-gradient(135deg, #457b9d, #a8dadc);
+      color: #ffffff;
+      text-align: center;
+      padding: 5rem 1rem 6rem;
+      position: relative;
+    }
+
+    header h2 {
+      font-size: 3rem;
       margin-bottom: 1rem;
     }
 
     header p {
       font-size: 1.3rem;
-      max-width: 600px;
+      max-width: 650px;
       margin: auto;
     }
 
-    .clouds {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 100px;
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23fffaf0' d='M0,224L48,218.7C96,213,192,203,288,213.3C384,224,480,256,576,261.3C672,267,768,245,864,218.7C960,192,1056,160,1152,149.3C1248,139,1344,149,1392,154.7L1440,160L1440,320L0,320Z'/%3E%3C/svg%3E") no-repeat center/cover;
-    }
-
+    /* Main content */
     main {
       max-width: 1100px;
       margin: auto;
       padding: 4rem 1rem;
     }
 
-    h2 {
+    h3.section-title {
       text-align: center;
       font-size: 2.5rem;
-      margin-bottom: 2rem;
-      color: #ff6f91;
+      margin-bottom: 3rem;
+      color: #1d3557;
     }
 
-    .activities {
+    .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 2rem;
     }
 
-    .activity {
+    .card {
       background: white;
       border-radius: 24px;
-      padding: 2rem;
+      padding: 2.5rem 2rem;
       text-align: center;
       box-shadow: 0 15px 30px rgba(0,0,0,0.08);
-      transition: transform 0.3s;
+      transition: transform 0.3s ease;
     }
 
-    .activity:hover {
-      transform: translateY(-6px);
+    .card:hover {
+      transform: translateY(-8px);
     }
 
     .icon {
@@ -80,16 +96,19 @@
       margin-bottom: 1rem;
     }
 
+    /* Call to action */
     .cta {
-      background: #90dbf4;
-      margin-top: 4rem;
+      margin-top: 5rem;
+      background: #e63946;
+      color: white;
+      padding: 3.5rem 2rem;
       border-radius: 32px;
-      padding: 3rem;
       text-align: center;
     }
 
-    .cta h2 {
-      color: #023047;
+    .cta h3 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
     }
 
     .cta p {
@@ -99,59 +118,90 @@
     .cta a {
       display: inline-block;
       margin-top: 1.5rem;
-      background: #ff6f91;
-      color: white;
+      background: #f1faee;
+      color: #1d3557;
       padding: 0.9rem 2.5rem;
       border-radius: 999px;
-      text-decoration: none;
       font-size: 1.1rem;
+      text-decoration: none;
       font-weight: 600;
     }
 
+    /* Footer */
     footer {
       text-align: center;
       padding: 2rem;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: #666;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
 
+  <!-- Navigation -->
+  <nav>
+    <h1>HopeTenars Group</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="stories.html">Stories</a>
+      <a href="activities.html">Activities</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
   <header>
-    <h1>🌟 HopeTenars Group site 🌟</h1>
-    <p>A happy place where kids read, learn, and play!</p>
-    <div class="clouds"></div>
+    <h2>Building Hope for Tomorrow</h2>
+    <p>
+      HopeTenars Group is a safe and joyful community where children grow
+      through learning, friendship, faith, and fun.
+    </p>
   </header>
 
+  <!-- Main Content -->
   <main>
-    <h2>What We Do</h2>
+    <h3 class="section-title">What We Believe In</h3>
 
-    <section class="activities">
-      <div class="activity">
-        <div class="icon">🎨</div>
-        <h3>Activities</h3>
-        <p>Painting, drawing, and fun creative projects.</p>
+    <section class="cards">
+      <div class="card">
+        <div class="icon">💙</div>
+        <h4>Love & Care</h4>
+        <p>Every child is valued, respected, and supported.</p>
       </div>
 
-      <div class="activity">
-        <div class="icon">⚽</div>
-        <h3>Stories</h3>
-        <p>Stories from Mummy HopeTenar.</p>
+      <div class="card">
+        <div class="icon">📖</div>
+        <h4>Learning</h4>
+        <p>Stories, lessons, and activities that inspire growth.</p>
       </div>
-      
-      
+
+      <div class="card">
+        <div class="icon">🤝</div>
+        <h4>Community</h4>
+        <p>Building strong friendships and teamwork.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌱</div>
+        <h4>Future Hope</h4>
+        <p>Encouraging confidence, purpose, and positive values.</p>
+      </div>
     </section>
 
+    <!-- Call to Action -->
     <section class="cta">
-      <h2>Join the Fun!</h2>
-      <p>Open to children ages 4–10. Safe, caring, and full of smiles 😊</p>
-      <a href="#">Sign Up Today</a>
+      <h3>Join HopeTenars Group</h3>
+      <p>
+        Together, we nurture young hearts and minds for a brighter future.
+      </p>
+      <a href="#">Get Involved</a>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    © 2026 Sunny Stars Kids Club · Made with ❤️ for kids
+    © 2026 HopeTenars Group · Inspiring Hope, Growing Together
   </footer>
 
 </body>
