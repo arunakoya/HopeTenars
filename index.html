@@ -3,76 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My HopeTenar Website</title>
+  <title>HopeTenars Group</title>
+
+  <!-- Friendly font -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
+
   <style>
-    :root {
-      --primary: #2563eb;
-      --secondary: #0ea5e9;
-      --dark: #0f172a;
-      --light: #f8fafc;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-
     body {
-      background: var(--light);
-      color: var(--dark);
-      line-height: 1.6;
+      margin: 0;
+      font-family: "Baloo 2", cursive;
+      background: #fdfefe;
+      color: #333;
     }
 
+    /* Navigation */
+    nav {
+      background: #1d3557;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      color: #f1faee;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    nav a {
+      color: #f1faee;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    /* Hero */
     header {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      padding: 5rem 1rem 7rem;
+      background: linear-gradient(135deg, #457b9d, #a8dadc);
+      color: #ffffff;
       text-align: center;
+      padding: 5rem 1rem 6rem;
       position: relative;
-      overflow: hidden;
     }
 
-    header h1 {
+    header h2 {
       font-size: 3rem;
       margin-bottom: 1rem;
     }
 
     header p {
-      font-size: 1.2rem;
-      max-width: 600px;
+      font-size: 1.3rem;
+      max-width: 650px;
       margin: auto;
     }
 
-    /* Wave SVG */
-    .wave {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 80px;
-    }
-
+    /* Main content */
     main {
-      padding: 4rem 1rem;
       max-width: 1100px;
       margin: auto;
+      padding: 4rem 1rem;
+    }
+
+    h3.section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #1d3557;
     }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 2rem;
     }
 
     .card {
       background: white;
-      border-radius: 16px;
-      padding: 2rem;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease;
+      border-radius: 24px;
+      padding: 2.5rem 2rem;
       text-align: center;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
     }
 
     .card:hover {
@@ -80,87 +92,116 @@
     }
 
     .icon {
-      width: 60px;
-      height: 60px;
+      font-size: 3rem;
       margin-bottom: 1rem;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 1.5rem;
     }
 
-    section.cta {
+    /* Call to action */
+    .cta {
       margin-top: 5rem;
-      background: var(--dark);
+      background: #e63946;
       color: white;
-      border-radius: 24px;
-      padding: 3rem;
+      padding: 3.5rem 2rem;
+      border-radius: 32px;
       text-align: center;
+    }
+
+    .cta h3 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
     }
 
     .cta a {
       display: inline-block;
       margin-top: 1.5rem;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      padding: 0.8rem 2rem;
+      background: #f1faee;
+      color: #1d3557;
+      padding: 0.9rem 2.5rem;
       border-radius: 999px;
+      font-size: 1.1rem;
       text-decoration: none;
       font-weight: 600;
     }
 
+    /* Footer */
     footer {
       text-align: center;
       padding: 2rem;
-      color: #64748b;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
+      color: #666;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Welcome to My Website</h1>
-    <p>A simple, modern static page with clean graphics and responsive design.</p>
+  <!-- Navigation -->
+  <nav>
+    <h1>HopeTenars Group</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="stories.html">Stories</a>
+      <a href="activities.html">Activities</a>
+    </div>
+  </nav>
 
-    <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <path fill="#f8fafc" d="M0,224L60,229.3C120,235,240,245,360,240C480,235,600,213,720,186.7C840,160,960,128,1080,138.7C1200,149,1320,203,1380,229.3L1440,256L1440,320L0,320Z"></path>
-    </svg>
+  <!-- Hero Section -->
+  <header>
+    <h2>Building Hope for Tomorrow</h2>
+    <p>
+      HopeTenars Group is a safe and joyful community where children grow
+      through learning, friendship, faith, and fun.
+    </p>
   </header>
 
+  <!-- Main Content -->
   <main>
+    <h3 class="section-title">What We Believe In</h3>
+
     <section class="cards">
       <div class="card">
-        <div class="icon">⚡</div>
-        <h3>Fast</h3>
-        <p>Loads instantly and runs smoothly on any device.</p>
+        <div class="icon">💙</div>
+        <h4>Love & Care</h4>
+        <p>Every child is valued, respected, and supported.</p>
       </div>
 
       <div class="card">
-        <div class="icon">🎨</div>
-        <h3>Beautiful</h3>
-        <p>Modern UI with gradients, cards, and clean typography.</p>
+        <div class="icon">📖</div>
+        <h4>Learning</h4>
+        <p>Stories, lessons, and activities that inspire growth.</p>
       </div>
 
       <div class="card">
-        <div class="icon">🌍</div>
-        <h3>Deployed</h3>
-        <p>Perfect for GitHub Pages, GoDaddy, Netlify, or Vercel.</p>
+        <div class="icon">🤝</div>
+        <h4>Community</h4>
+        <p>Building strong friendships and teamwork.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌱</div>
+        <h4>Future Hope</h4>
+        <p>Encouraging confidence, purpose, and positive values.</p>
       </div>
     </section>
 
+    <!-- Call to Action -->
     <section class="cta">
-      <h2>Ready to Go Live?</h2>
-      <p>Upload this page to your hosting provider and connect your custom domain.</p>
-      <a href="#">Get Started</a>
+      <h3>Join HopeTenars Group</h3>
+      <p>
+        Together, we nurture young hearts and minds for a brighter future.
+      </p>
+      <a href="#">Get Involved</a>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    © 2026 My Static Website. All rights reserved.
+    © 2026 HopeTenars Group · Inspiring Hope, Growing Together
   </footer>
 
 </body>
