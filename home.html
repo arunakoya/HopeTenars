@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunny Stars Kids Club</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Baloo 2", cursive;
+      background: #fffaf0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ffb703, #ff6f91);
+      padding: 4rem 1rem 6rem;
+      text-align: center;
+      position: relative;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .clouds {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23fffaf0' d='M0,224L48,218.7C96,213,192,203,288,213.3C384,224,480,256,576,261.3C672,267,768,245,864,218.7C960,192,1056,160,1152,149.3C1248,139,1344,149,1392,154.7L1440,160L1440,320L0,320Z'/%3E%3C/svg%3E") no-repeat center/cover;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #ff6f91;
+    }
+
+    .activities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+
+    .activity {
+      background: white;
+      border-radius: 24px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .activity:hover {
+      transform: translateY(-6px);
+    }
+
+    .icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta {
+      background: #90dbf4;
+      margin-top: 4rem;
+      border-radius: 32px;
+      padding: 3rem;
+      text-align: center;
+    }
+
+    .cta h2 {
+      color: #023047;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: #ff6f91;
+      color: white;
+      padding: 0.9rem 2.5rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌟 Sunny Stars Kids Club 🌟</h1>
+    <p>A happy place where kids learn, play, and make new friends every day!</p>
+    <div class="clouds"></div>
+  </header>
+
+  <main>
+    <h2>What We Do</h2>
+
+    <section class="activities">
+      <div class="activity">
+        <div class="icon">🎨</div>
+        <h3>Arts & Crafts</h3>
+        <p>Painting, drawing, and fun creative projects.</p>
+      </div>
+
+      <div class="activity">
+        <div class="icon">⚽</div>
+        <h3>Sports & Games</h3>
+        <p>Outdoor play, teamwork, and healthy fun.</p>
+      </div>
+
+      <div class="activity">
+        <div class="icon">📚</div>
+        <h3>Learning Time</h3>
+        <p>Stories, puzzles, and exciting discoveries.</p>
+      </div>
+
+      <div class="activity">
+        <div class="icon">🎵</div>
+        <h3>Music & Dance</h3>
+        <p>Singing, dancing, and rhythm activities.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Join the Fun!</h2>
+      <p>Open to children ages 4–10. Safe, caring, and full of smiles 😊</p>
+      <a href="#">Sign Up Today</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Sunny Stars Kids Club · Made with ❤️ for kids
+  </footer>
+
+</body>
+</html>
